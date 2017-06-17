@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_CadastroLivros.View.Livro.CadastrarLivroView"
+             Title="Cadastrar Livro">
+    
+    <ContentPage.Content>
+    
+        <StackLayout Padding="20">
+
+            <Entry x:Name="txtNomeLivro" Placeholder="Nome do livro" />
+            <Entry x:Name="txtNomeAutorLivro" Placeholder="Nome do autor" />
+            <Entry x:Name="txtEmailDoAutor" Placeholder="Email do autor" />
+            <Entry x:Name="txtISBN" Placeholder="ISBN do livro" />
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                <Button x:Name="btnSalvar" Text="Salvar" Clicked="OnSalvar" />
+                <Button x:Name="btnCancelar" Text="Cancelar" Clicked="OnCancelar" />
+
+            </StackLayout>
+
+        </StackLayout>
+    
+    </ContentPage.Content>
+    
+</ContentPage>

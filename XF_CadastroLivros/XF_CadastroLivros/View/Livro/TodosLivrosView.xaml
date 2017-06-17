@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_CadastroLivros.View.Livro.TodosLivrosView" Title="Livros cadastrados">
+    
+    <ContentPage.Content>
+
+        <StackLayout Padding="20">
+
+            <Label Text="Livros" Font="18" HorizontalOptions="Center" />
+            <Label Text="" Font="18" />
+
+            <ListView x:Name="lstLivros" ItemsSource="{Binding Livros}" ItemTapped="OnLivroTapped">
+
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+
+                        <ViewCell>
+
+                            <StackLayout Padding="5,0,5,0">
+
+                                <Label Text="{Binding NomeDoLivro}" Font="14" />
+                                <Label Text="{Binding NomeDoAutorLivro}" Font="12" />
+
+                            </StackLayout>
+
+                        </ViewCell>
+                        
+                    </DataTemplate>
+                    
+                </ListView.ItemTemplate>
+                
+            </ListView>
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+    
+</ContentPage>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_CadastroLivros.View.Livro.PaginaInicial" Title="Cadastro de Livros">
+    
+    <ContentPage.Content>
+        
+        <StackLayout Padding="15">
+
+            <Label Text="Escolha a opção abaixo" Font="18" HorizontalOptions="Center" />
+            <Label Text="" Font="18" />
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                <Button x:Name="btnCadastrar" Text="Cadastrar livro" Clicked="OnCadastrar" />
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                <Button x:Name="btnExcluir" Text="Excluir livro" Clicked="OnExcluir" />
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                <Button x:Name="btnMostrar" Text="Mostrar todos os livros" Clicked="OnMostrarTodos" />
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                <Button x:Name="btnEditar" Text="Editar livro" Clicked="OnEditar" />
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="End">
+
+                <Label Text="App desenvolvido por Rafael Gomes" Font="11"  />
+
+            </StackLayout>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+    
+</ContentPage>

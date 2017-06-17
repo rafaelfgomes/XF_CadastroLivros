@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_CadastroLivros.View.Livro.EditarLivro" Title="Editando livro">
+    <ContentPage.Content>
+        
+        <StackLayout Padding="20">
+
+            <Entry x:Name="txtNomeLivro" />
+            <Entry x:Name="txtNomeAutorLivro" />
+            <Entry x:Name="txtEmailDoAutor" />
+            <Entry x:Name="txtISBN" />
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                <Button x:Name="btnEditar" Text="Editar" Clicked="OnEditar" />
+                <Button x:Name="btnCancelar" Text="Cancelar" Clicked="OnCancelar" />
+
+            </StackLayout>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+    
+</ContentPage>
