@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XF_CadastroLivros.ViewModel;
+using Xamarin.Forms.PlatformConfiguration;
 
 namespace XF_CadastroLivros.View.Livro
 {
