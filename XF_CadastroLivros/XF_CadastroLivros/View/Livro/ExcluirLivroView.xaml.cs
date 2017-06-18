@@ -36,19 +36,6 @@ namespace XF_CadastroLivros.View.Livro
 
         }
 
-        //private void OnLivroExcluirTapped(object sender, ItemTappedEventArgs args)
-        //{
-
-        //    var selecionado = args.Item as Model.Livro;
-
-        //    App.LivroModel.RemoverLivro(selecionado.Id);
-
-        //    DisplayAlert("Excluido", "Livro excluído com sucesso!!!", "OK");
-
-        //    OnAppearing();
-
-        //}
-
         async void OnLivroExcluirTapped(object sender, ItemTappedEventArgs args)
         {
 
